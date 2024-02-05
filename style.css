@@ -1,0 +1,289 @@
+.e-calculator {
+    background-color: #b5eaf3;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background-image: url(https://app.solarsesame.com/images/energy-credits-calculator-bg.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 20px auto;
+}
+.e-calculator .heading {
+    text-align: center;
+    font-size: 30px;
+    width: 450px;
+    margin: 20px auto;
+}
+.e-calculator .e-calculator-data {
+ padding-bottom: 300px;   
+}
+.e-calculator .e-calculator-data .heading {
+    text-align: center;
+}
+.e-calculator .e-calculator-data .input1-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.e-calculator .e-calculator-data .input1-data .para {
+    width: 180px;
+    font-size: 19px;
+    line-height: 25px;
+}
+.e-calculator .e-calculator-data .more-info {
+    position: relative;
+}
+.e-calculator .e-calculator-data .input1-data .explanation {
+    width: 200px;
+    position: absolute;
+    left: -100px;
+    top: -265px;
+    z-index: 999;
+    background-color: #fff;
+    padding: 18px;
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 5px;
+    box-shadow: -1px -1px 5px #c5e1e6;
+    user-select: none;
+    display: none;
+}
+.e-calculator .e-calculator-data .input1-data .exp-two {
+    top: -210px;
+}
+.e-calculator .e-calculator-data svg {
+width: 25px;
+}
+.e-calculator .e-calculator-data svg:hover {
+    cursor: pointer;
+}
+
+.e-calculator .e-calculator-data .input1-data .input {
+    position: relative;
+}
+.e-calculator .e-calculator-data .input1-data .input span {
+    font-size: 18px;
+    position: absolute;
+    left: 4px;
+    top: 13px;
+    color: #494848;
+    padding: 0 10px;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.e-calculator .e-calculator-data .input1-data .input input {
+    background-color: #f5f5f5;
+    border: #55cbe0;
+    outline: #001d22;
+    padding: 13px 35px;
+    font-weight: 300;
+    font-size: 19px;
+    border-radius: 5px;
+}
+.calculate-btn {
+    box-sizing: border-box;
+    background-color: #16925c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin: 20px auto;
+    font-weight: bold;
+    padding: 0px 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.calculate-btn:hover {
+    background-color: #097445;
+}
+
+.result-data {
+    margin: 30px 20px;
+    background-color: #edf8eb;
+    border-radius: 10px;
+    font-family: sans-serif;
+    padding: 40px;
+}
+.result-data h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #d31212;
+    margin-bottom: 10px;
+}
+.graph {
+    flex: 2;
+}
+canvas {
+    width: 80% !important;
+}
+.graph-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-monthly-epayment {
+    margin: 0 10px;
+}
+.current-monthly-epayment p, .future-monthly-epayment p {
+    font-family: sans-serif;
+    color: #464343;
+    line-height: 19px;
+    font-size: 14px;
+    margin-bottom: -50px;
+}
+.current-monthly-epayment h3, .future-monthly-epayment h3 {
+    font-size: 45px;
+}
+.future-monthly-epayment h3 {
+    color: rgb(189, 10, 10);
+}
+#sliderContainer {
+    position: relative;
+    width: 90%;
+    margin-top: 40px;
+}
+
+#sliderValue {
+    position: absolute;
+    top: -25px;
+    left: 97%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    margin-left: 10px;
+}
+.circular-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .circular-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #9c9a9adc;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+@media screen and (max-width: 750px) {
+    canvas {
+        width: 100% !important;
+    }
+.e-calculator {
+ width: 100%;   
+}
+.e-calculator .e-calculator-data {
+    padding-bottom: 100px;
+}
+.e-calculator .heading {
+    width: 100%;
+    font-size: 20px;
+}
+.e-calculator .e-calculator-data .input1-data .para {
+    width: 180px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.e-calculator .e-calculator-data svg {
+    width: 20px;
+}
+.e-calculator .e-calculator-data .input1-data .input input {
+    background-color: #f5f5f5;
+    border: #55cbe0;
+    outline: #001d22;
+    padding: 13px 35px;
+    font-weight: 300;
+    font-size: 19px;
+    border-radius: 5px;
+    width: 200px;
+}
+.calculate-btn {
+    box-sizing: border-box;
+    background-color: #16925c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin: 30px auto;
+    font-weight: bold;
+    padding: 0px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 95%;
+}
+.current-monthly-epayment h3, .future-monthly-epayment h3 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.current-monthly-epayment p, .future-monthly-epayment p {
+    margin-bottom: 0;
+}
+.result-data {
+    width: 95%;
+    margin: 20px 0;
+    padding: 20px 10px;
+}
+.result-data h2 {
+    font-size: 20px;
+}
+.graph-data {
+ flex-direction: column;
+ gap: 20px;
+}
+.graph {
+    order: 3;
+}
+#sliderContainer { 
+    width: 100%;
+}
+#sliderValue {
+    left: 90%;
+}
+}
+
+@media screen and (max-width: 620px) {
+.e-calculator .heading {
+    font-size: 17px;
+    font-weight: bold;
+}
+.e-calculator .e-calculator-data .input1-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.e-calculator .e-calculator-data .input1-data .para {
+    width: 100px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.e-calculator .e-calculator-data .input1-data .input input {
+    outline: #001d22;
+    padding: 13px 30px;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100px;
+}
+}
